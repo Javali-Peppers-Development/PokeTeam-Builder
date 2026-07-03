@@ -1,4 +1,97 @@
 /* From Uiverse.io by andrew-demchenk0 */
+/* ===== BACKGROUND ANIMADO ===== */
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.background{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg{
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transform: scale(1);
+
+    animation:
+        fade 24s infinite,
+        zoom 24s linear infinite;
+}
+
+.bg1{
+    background-image: url("../assets/images/Luogo_Askeshire_Kanka.jpeg");
+    animation-delay: 0s, 0s;
+}
+
+.bg2{
+    background-image: url("../assets/images/Pok Mon Sun And Moon A Sub Gallery By Ryuzu.png");
+    animation-delay: 6s, 6s;
+}
+
+.bg3{
+    background-image: url("../assets/images/Pok Mon Sun Moon Anime Intro Wallpaper.png");
+    animation-delay: 12s, 12s;
+}
+
+.bg4{
+    background-image: url("../assets/images/Pokemon Background Wallpaper.jpg");
+    animation-delay: 18s, 18s;
+}
+.bg5{
+    background-image: url("../assets/images/Arceus Legendary Pokemon Diamond And Pearl Laptop Full HD 1080p 4k Wallpaper.jpg");
+    animation-delay: 24s, 24s;
+}
+.bg6{
+    background-image: url("../assets/images/Pokemon Landscape Wallpaper.jpg");
+    animation-delay: 30s, 30s;
+}
+
+@keyframes fade {
+
+    0%{
+        opacity: 0;
+    }
+
+    5%{
+        opacity: 1;
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+
+@keyframes zoom {
+
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.08);
+    }
+
+}
 .wrapper {
     --input-focus: #2d8cf0;
     --font-color: #323232;
