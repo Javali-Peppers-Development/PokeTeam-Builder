@@ -12,20 +12,42 @@ function buscaPokemon() {
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonDigitado}`)
     .then(function (resposta) {
-        return resposta.json();
-    })
-    .then(function(dados) {
-        if (dados.erro) {
+        if (!resposta.ok) {
             alert("Pokémon não encontrado")
             return;
         }
-        document.getElementById("tipo1").value = "";
-        document.getElementById("tipo2").value = "";
+        return resposta.json();
+    })
+    .then(function(dados) {
+        
+        let nomePokemon = dados.name;
+        let idPokemon = dados.id;
+        let itemPokemon = "Nenhum item";
 
-        document.getElementById("nome").value = dados.name;
-        document.getElementById("imagem").value = dados.sprites.front_default;
-        document.getElementById("tipo1").value = dados.types[0].type.name;
-        document.getElementById("tipo2").value = dados.types[1].type.name;
+        let tipo1 = dados.types[0].type.name;
+        let tipo2 = dados.types[1] ? dados.types[1].type.name : "Não tem";
+
+
+        
+        document.getElementById("CardPokemon").innerHTML = `
+
+                <div class="pokemon-card">
+
+                <h2>Nome: ${dados.name}</h2>
+                <br>
+                <p>Tipo 1: ${tipo1}</p>
+                <br>
+                <p>Tipo 2: ${tipo2}</p>
+                <br>
+                <img src="${dados.sprites.front_default}" alt="Imagem do Pokémon">
+                <br>
+                </div>
+               
+            
+        `;
+
+
+        
     })
 }
 
@@ -33,7 +55,18 @@ const formPokemon = document.getElementById("nome");
 formPokemon.addEventListener('focusout', buscaPokemon);
 
 
+// Inicio busca de Pokémon por ID
 
+
+
+
+
+
+
+
+
+
+// fim busca de Pokémon por ID
 
 /* 
 

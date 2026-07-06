@@ -1,1 +1,37 @@
-<!--Aqui será a tela de cadastro. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastro Pokémon</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Pokémon</h1>
+
+        <div class="form-box">
+
+            <label for="nome">Digite seu Pokémon:</label>
+
+            <input type="text" id="nome" placeholder="Ex: Caterpie">
+
+            <button onclick="salvarTime()">Salvar</button>
+            <button onclick="window.location.href='../../index.html'">Voltar</button>
+
+        </div>
+
+        <div id="CardPokemon"></div>
+
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/storage.js"></script>
+
+</body>
+
+</html>
