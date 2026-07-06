@@ -56,16 +56,12 @@ function buscaPokemonID() {
         
         document.getElementById("CardPokemon").innerHTML += `
 
-                <div class="pokemon-card">
-
+                <div class="pokemonCard">
+   
+                <img src="${dados.sprites.front_default}">
                 <h2>Nome: ${dados.name}</h2>
-                <br>
-                <p>Tipo 1: ${tipo1}</p>
-                <br>
                 <p>Tipo 2: ${tipo2}</p>
-                <br>
-                <img src="${dados.sprites.front_default}" alt="Imagem do Pokémon">
-                <br>
+                <span>${tipo1}</span>
                 </div>
                
             
