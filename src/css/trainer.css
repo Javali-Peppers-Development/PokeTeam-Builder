@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:#111827;
+    color:white;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.container{
+
+    width:1200px;
+    max-width:95%;
+
+}
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+.backButton{
+
+    background:#1f2937;
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.backButton:hover{
+
+    background:#374151;
+
+}
+
+.teamTitle{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.teamTitle h1{
+
+    font-size:38px;
+
+}
+
+.teamTitle button{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.pokemonGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.pokemonCard{
+
+    background:#1f2937;
+
+    border-radius:18px;
+
+    height:240px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.pokemonCard:hover{
+
+    transform:translateY(-8px);
+
+    background:#374151;
+
+}
+
+.pokemonCard img{
+
+    width:120px;
+
+}
+
+.pokemonCard h2{
+
+    margin-top:15px;
+
+    font-size:24px;
+
+}
+
+.pokemonCard p{
+
+    color:#bdbdbd;
+
+    margin:8px 0;
+
+}
+
+.pokemonCard span{
+
+    background:#2563eb;
+
+    padding:6px 18px;
+
+    border-radius:50px;
+
+}
+
+.empty{
+
+    font-size:70px;
+
+    color:#6b7280;
+
+}
+
+.buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.primary{
+
+    padding:16px 30px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+.secondary{
+
+    padding:16px 30px;
+
+    background:#22c55e;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+.primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.secondary:hover{
+
+    background:#16a34a;
+
+}
