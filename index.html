@@ -1,31 +1,30 @@
-<!-- Aqui é o index. -->
- 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testes</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Meu Time Pokémon</title>
 </head>
-
 <body>
-    <H2>Testes</H2>
+    
 
-    <label for="nome">Digite seu Pokemon:</label>
-    <input type="text" id="nome" placeholder="Ex:caterpie">
-    <br><br>
-    <label for="tipo1">Tipos</label>
-    <input type="text" id="tipo1" placeholder="">
-    <br><br>
-    <label for="tipo2">Tipos</label>
-    <input type="text" id="tipo2" placeholder="">
-    <br><br>
-    <label for="imagem">Imagem: </label>
-    <input type="text" id="imagem" placeholder="">
-    <br><br>
-    <script src="src/js/api.js"></script>
+    <div class="container">
+        <h1>Meu Time Pokémon</h1>
+
+        <div class="acoes">
+            <button onclick="window.location.href='./src/pages/cadastro.html'">
+                Ir para Cadastro
+            </button>
+
+            <button id="btnExcluir" onclick="excluiHistorico()">
+                Excluir Histórico
+            </button>
+        </div>
+
+        <div id="CardPokemon"></div>
+    </div>
+
+    <script src="src/js/find.js"></script>
 </body>
-
 </html>
-
