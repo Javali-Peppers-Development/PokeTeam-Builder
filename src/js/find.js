@@ -60,8 +60,9 @@ function buscaPokemonID() {
    
                 <img src="${dados.sprites.front_default}">
                 <h2>Nome: ${dados.name}</h2>
-                <p>Tipo 2: ${tipo2}</p>
                 <span>${tipo1}</span>
+                <p>Tipo 2: ${tipo2}</p>
+                <button onclick="window.location.href='./alterar.html'">Alterar</button>
                 </div>
                
             
